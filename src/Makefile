@@ -1,7 +1,7 @@
 FLAGS = -Wall -g -std=c++11 -fsanitize=address
 
 all: GSCPixel.o RGBPixel.o GSCImage.o RGBImage.o Token.o
-	g++ $(FLAGS) hw4.cpp GSCPixel.o RGBPixel.o GSCImage.o RGBImage.o Token.o -o hw4
+	g++ $(FLAGS) imageProcessingApp.cpp GSCPixel.o RGBPixel.o GSCImage.o RGBImage.o Token.o -o imageProcessingApp
 
 GSCPixel.o: Pixel.hpp GSCPixel.hpp GSCPixel.cpp
 	g++ $(FLAGS) -c GSCPixel.cpp
