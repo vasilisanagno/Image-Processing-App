@@ -1,6 +1,6 @@
 # Image-Processing-App
 
-This command-line application offers a variety of essential image processing functionalities, including export, delete, inversion, histogram equalization, mirroring, grayscale conversion, scaling, and rotation.
+This command-line application in C++ offers a variety of essential image processing functionalities, including export, delete, inversion, histogram equalization, mirroring, grayscale conversion, scaling, and rotation.
 
 ## Features
 
