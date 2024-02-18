@@ -30,3 +30,27 @@ In the `src` folder, you can find all the necessary source code files. Use the p
 make all
 ./imageProcessingApp
 ```
+### Usage
+
+To use the program, follow these steps:
+
+1. Run the executable file.
+2. Enter the corresponding commands as follows:
+
+- `e <$token> as <filename>`: Export the image with the specified token to a file.
+- `d <$token>`: Delete the image with the specified token.
+- `n <$token>`: Invert the colors of the image with the specified token.
+- `z <$token>`: Equalize the histogram of the image with the specified token.
+- `m <$token>`: Mirror the image vertically.
+- `g <$token>`: Convert the image to grayscale.
+- `s <$token> by <factor>`: Scale the image by the given factor.
+- `r <$token> clockwise <X> times`: Rotate the image clockwise or counterclockwise by the specified number of times.
+- `q`: Quit the program.
+
+### Error Handling
+
+The program provides error messages in the following situations:
+
+- **If the exported file already exists:** `[ERROR] File exists`
+- **If the user doesn't have permission to create or write to the file:** `[ERROR] Unable to create file`
+- **If the image is already grayscale:** `[NOP] Already grayscale $token`
